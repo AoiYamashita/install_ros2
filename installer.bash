@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+#installer ubuntu 18.04 20.04
 
 ROS_DISTRO="foxy"
 
