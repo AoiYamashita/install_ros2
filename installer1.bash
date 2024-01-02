@@ -10,3 +10,19 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 sudo apt update
 sudo apt install ros-humble-desktop
 
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+source .bashrc
+
+sudo apt install python3-colcon-common-extensions
+
+mkdir -p ~/ros2_ws/src
+cd ros2_ws/
+colcon build
+
+sudo apt -y install gazebo
+sudo apt install ros-humble-gazebo-*
+
+sudo apt install ros-humble-rqt-*
+
+
+
