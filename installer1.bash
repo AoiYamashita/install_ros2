@@ -11,9 +11,12 @@ sudo apt update
 sudo apt install ros-humble-desktop
 
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-source .bashrc
+source ~/.bashrc
 
 sudo apt install python3-colcon-common-extensions
+sudo apt install python3-rosdep
+sudo rosdep init
+rosdep update
 
 mkdir -p ~/ros2_ws/src
 cd ros2_ws/
