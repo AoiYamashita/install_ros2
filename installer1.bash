@@ -22,6 +22,9 @@ mkdir -p ~/ros2_ws/src
 cd ros2_ws/
 colcon build
 
+sudo apt install python3-pip
+sudo pip install setuptools==58.2.0
+
 sudo apt -y install gazebo
 sudo apt install ros-humble-gazebo-*
 
