@@ -19,7 +19,7 @@ sudo rosdep init
 rosdep update
 
 mkdir -p ~/ros2_ws/src
-cd ros2_ws/
+cd ~/ros2_ws/
 colcon build
 
 sudo apt install python3-pip
